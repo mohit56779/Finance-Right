@@ -1,0 +1,11 @@
+site_name: Finance Right
+
+theme:
+    name: readthedocs
+
+nav:
+    - Project Introduction: index.md
+    - Project Requirements: requirements.md
+    - Architecture: architecture.md
+    - ER Diagram : er.md
+    - Wireframes : wireframes.md
