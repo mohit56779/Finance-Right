@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Project Requirements - Finance Right</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Project Requirements";
+    var mkdocs_page_input_path = "requirements.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Finance Right</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Project Introduction</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Project Requirements</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#general">General</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#us-101-navigation">US 1.01 -  Navigation</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-102-home-page">US 1.02 -  Home Page</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_1">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-103-contact-us-page">US 1.03 -  Contact Us Page</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_2">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-104-about-us-page">US 1.04 -  About Us Page</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_3">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#dashboard">Dashboard</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#us-201-view-transactions">US 2.01 - View Transactions</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_4">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-202-search-transactions">US 2.02 - Search Transactions</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_5">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-203-addmodify-transactions">US 2.03 - Add/Modify transactions</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_6">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-204-cashflow-analysis">US 2.04 - Cashflow analysis</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_7">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-205-expenditure-over-previous-time-periods">US 2.05 - Expenditure over previous time periods</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_8">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-206-view-categories">US 2.06 -  View Categories</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_9">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-207-createmodify-categories">US 2.07 -  Create/Modify Categories</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_10">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-208-profile">US 2.08 -  Profile</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_11">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-209-assign-a-purchaseearning-to-multiple-categories">US 2.09 -  Assign a purchase/earning to multiple categories</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_12">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-210-split-a-purchaseearning-into-multiple-categories">US 2.10 -  Split a purchase/earning into multiple categories</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_13">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bill-splitting">Bill splitting</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#us-301-splitting-bills">US 3.01 - Splitting Bills</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_14">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-302-owing-reminders">US 3.02 - Owing Reminders</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_15">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#budgeting">Budgeting</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#us-401-budget-overall">US 4.01 - Budget overall</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_16">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-402-budget-by-category">US 4.02 - Budget by category</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_17">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-403-budget-by-category">US 4.03 - Budget by category</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_18">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-404-budget-reminder">US 4.04 - Budget Reminder</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_19">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#saving-goals">Saving Goals</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#us-501-set-a-saving-goal">US 5.01 - Set a saving goal</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_20">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-502-addreduce-money-to-goal">US 5.02 - Add/Reduce money to goal</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_21">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-503-bar-chart-analysis-for-saving-goals-progress-monthly">US 5.03 - Bar chart analysis for saving goals progress (monthly)</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_22">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#us-504-graph-estimate-on-when-will-goal-be-reached">US 5.04 - Graph Estimate on when will goal be reached</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_23">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#admin-panel">Admin Panel</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#us-601-view-admin-panel">US 6.01 - View Admin Panel</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#acceptance-criteria_24">Acceptance Criteria</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../architecture/">Architecture</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../er/">ER Diagram</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../wireframes/">Wireframes</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Finance Right</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Project Requirements</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="user-stories">User Stories</h2>
+<h3 id="general">General</h3>
+<h4 id="us-101-navigation">US 1.01 -  Navigation</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to navigate in the website easily.</p>
+</blockquote>
+<h5 id="acceptance-criteria">Acceptance Criteria</h5>
+<ul>
+<li>Be able to navigate easily in the website.</li>
+</ul>
+<h4 id="us-102-home-page">US 1.02 -  Home Page</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to understand the value from the app from a quick look to the homepage.</p>
+</blockquote>
+<h5 id="acceptance-criteria_1">Acceptance Criteria</h5>
+<ul>
+<li>Have a clear homepage that explains the app.</li>
+</ul>
+<h4 id="us-103-contact-us-page">US 1.03 -  Contact Us Page</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to understand the value from the app from a quick look to the homepage.</p>
+</blockquote>
+<h5 id="acceptance-criteria_2">Acceptance Criteria</h5>
+<ul>
+<li>Have a clear contact us page.</li>
+</ul>
+<h4 id="us-104-about-us-page">US 1.04 -  About Us Page</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to understand what the company is and what it stands for.</p>
+</blockquote>
+<h5 id="acceptance-criteria_3">Acceptance Criteria</h5>
+<ul>
+<li>Have a clear about us page.</li>
+</ul>
+<hr />
+<h3 id="dashboard">Dashboard</h3>
+<h4 id="us-201-view-transactions">US 2.01 - View Transactions</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to view all my transactions from bank account and total amounts in each account.</p>
+</blockquote>
+<h5 id="acceptance-criteria_4">Acceptance Criteria</h5>
+<ul>
+<li>Be able to view their transactions and total amount available in each account.</li>
+</ul>
+<h4 id="us-202-search-transactions">US 2.02 - Search Transactions</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to search a specific name of transaction and get total amounts spent.</p>
+</blockquote>
+<h5 id="acceptance-criteria_5">Acceptance Criteria</h5>
+<ul>
+<li>Be able to search transactions and get a total for the results.</li>
+</ul>
+<h4 id="us-203-addmodify-transactions">US 2.03 - Add/Modify transactions</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to add/delete/modify a transaction.</p>
+</blockquote>
+<h5 id="acceptance-criteria_6">Acceptance Criteria</h5>
+<ul>
+<li>Be able to modify transactions.</li>
+</ul>
+<h4 id="us-204-cashflow-analysis">US 2.04 - Cashflow analysis</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to analyze my income and expenditure for a time period.</p>
+</blockquote>
+<h5 id="acceptance-criteria_7">Acceptance Criteria</h5>
+<ul>
+<li>Be able to view their cash flow for this month</li>
+</ul>
+<h4 id="us-205-expenditure-over-previous-time-periods">US 2.05 - Expenditure over previous time periods</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to see my weekly and monthly past expenditures.</p>
+</blockquote>
+<h5 id="acceptance-criteria_8">Acceptance Criteria</h5>
+<ul>
+<li>Be able to see expenditure for last few weeks and months</li>
+</ul>
+<h4 id="us-206-view-categories">US 2.06 -  View Categories</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to see how much I spent/earnt in different categories of expenses/earning for a time period.</p>
+</blockquote>
+<h5 id="acceptance-criteria_9">Acceptance Criteria</h5>
+<ul>
+<li>Be able to view expenses/earning in different categories.</li>
+</ul>
+<h4 id="us-207-createmodify-categories">US 2.07 -  Create/Modify Categories</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to add an expense/earning to a new category or change an expense/earning to a different category,</p>
+</blockquote>
+<h5 id="acceptance-criteria_10">Acceptance Criteria</h5>
+<ul>
+<li>Be able to create/modify categories</li>
+</ul>
+<h4 id="us-208-profile">US 2.08 -  Profile</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to see my profile and chande detials.</p>
+</blockquote>
+<h5 id="acceptance-criteria_11">Acceptance Criteria</h5>
+<ul>
+<li>Be able to see profile and chang profile info.</li>
+</ul>
+<h4 id="us-209-assign-a-purchaseearning-to-multiple-categories">US 2.09 -  Assign a purchase/earning to multiple categories</h4>
+<p>🟡 <em>&nbsp; Should be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to add an expense/earning to multiple categories.</p>
+</blockquote>
+<h5 id="acceptance-criteria_12">Acceptance Criteria</h5>
+<ul>
+<li>Be able to assign a purchase/earning to multiple categories.</li>
+</ul>
+<h4 id="us-210-split-a-purchaseearning-into-multiple-categories">US 2.10 -  Split a purchase/earning into multiple categories</h4>
+<p>🟠 <em>&nbsp; Could be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to split an expense/earning into different categories.</p>
+</blockquote>
+<h5 id="acceptance-criteria_13">Acceptance Criteria</h5>
+<ul>
+<li>Be able to split a purchase into different categories.</li>
+</ul>
+<hr />
+<h3 id="bill-splitting">Bill splitting</h3>
+<h4 id="us-301-splitting-bills">US 3.01 - Splitting Bills</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to split a bill in different proportions to different finance sharers.</p>
+</blockquote>
+<h5 id="acceptance-criteria_14">Acceptance Criteria</h5>
+<ul>
+<li>Be able to split a transaction in different proportions between group members.</li>
+</ul>
+<h4 id="us-302-owing-reminders">US 3.02 - Owing Reminders</h4>
+<p>🟠 <em>&nbsp; Could be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to split a bill in different proportions to different finance sharers.</p>
+</blockquote>
+<h5 id="acceptance-criteria_15">Acceptance Criteria</h5>
+<ul>
+<li>Be able to split an email analysis of owings and reminder to a finance sharer.</li>
+</ul>
+<hr />
+<h3 id="budgeting">Budgeting</h3>
+<h4 id="us-401-budget-overall">US 4.01 - Budget overall</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to create an overall expense and earning budget for the month.</p>
+</blockquote>
+<h5 id="acceptance-criteria_16">Acceptance Criteria</h5>
+<ul>
+<li>Be able to create overall cashflow budget for the month.</li>
+</ul>
+<h4 id="us-402-budget-by-category">US 4.02 - Budget by category</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to create a category by category budget for each expense/earning category</p>
+</blockquote>
+<h5 id="acceptance-criteria_17">Acceptance Criteria</h5>
+<ul>
+<li>Be able to create category wise budget.</li>
+</ul>
+<h4 id="us-403-budget-by-category">US 4.03 - Budget by category</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to create a category by category budget for each expense/earning category</p>
+</blockquote>
+<h5 id="acceptance-criteria_18">Acceptance Criteria</h5>
+<ul>
+<li>Be able to create category wise budget.</li>
+</ul>
+<h4 id="us-404-budget-reminder">US 4.04 - Budget Reminder</h4>
+<p>🟢 <em>&nbsp; Must be done</em></p>
+<blockquote>
+<p>As a user, I want to receive email/push notifications when budget for a certain category is over.</p>
+</blockquote>
+<h5 id="acceptance-criteria_19">Acceptance Criteria</h5>
+<ul>
+<li>Be able to receive budget reminders.</li>
+</ul>
+<hr />
+<h3 id="saving-goals">Saving Goals</h3>
+<h4 id="us-501-set-a-saving-goal">US 5.01 - Set a saving goal</h4>
+<p>🟠 <em>&nbsp; Could be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to set a goal I want to save money for.</p>
+</blockquote>
+<h5 id="acceptance-criteria_20">Acceptance Criteria</h5>
+<ul>
+<li>Be able to set a goal to save.</li>
+</ul>
+<h4 id="us-502-addreduce-money-to-goal">US 5.02 - Add/Reduce money to goal</h4>
+<p>🟠 <em>&nbsp; Could be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to add/remove funds from a saving goal.</p>
+</blockquote>
+<h5 id="acceptance-criteria_21">Acceptance Criteria</h5>
+<ul>
+<li>Be able to add/reduce money from saving goal.</li>
+</ul>
+<h4 id="us-503-bar-chart-analysis-for-saving-goals-progress-monthly">US 5.03 - Bar chart analysis for saving goals progress (monthly)</h4>
+<p>🟠 <em>&nbsp; Could be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to see a bar chart report of previous months’ saving goal changes.</p>
+</blockquote>
+<h5 id="acceptance-criteria_22">Acceptance Criteria</h5>
+<ul>
+<li>Be able to see past months saving goals changes.</li>
+</ul>
+<h4 id="us-504-graph-estimate-on-when-will-goal-be-reached">US 5.04 - Graph Estimate on when will goal be reached</h4>
+<p>🟠 <em>&nbsp; Could be done</em></p>
+<blockquote>
+<p>As a user, I want to be able to see a graph to know when the goal will be reached.</p>
+</blockquote>
+<h5 id="acceptance-criteria_23">Acceptance Criteria</h5>
+<ul>
+<li>Be able to see a graph for each saving goals.</li>
+</ul>
+<hr />
+<h3 id="admin-panel">Admin Panel</h3>
+<h4 id="us-601-view-admin-panel">US 6.01 - View Admin Panel</h4>
+<p>🟠 <em>&nbsp; Could be done</em></p>
+<blockquote>
+<p>As an admin, I would like to have a dashboard to view number of users, number of paid users and other usage details.</p>
+</blockquote>
+<h5 id="acceptance-criteria_24">Acceptance Criteria</h5>
+<ul>
+<li>Be able to view an admin panel with data.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../architecture/" class="btn btn-neutral float-right" title="Architecture">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Project Introduction"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../architecture/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme_extra.js" defer></script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
