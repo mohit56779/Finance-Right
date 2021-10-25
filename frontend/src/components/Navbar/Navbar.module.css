@@ -1,0 +1,48 @@
+.navMobile{
+    padding: 1rem 3rem 1rem 2rem;
+    height: 5.25rem;
+    background-color: var(--bg-secondary-color);
+}
+
+.navMobile h5{
+    margin-bottom: 0.75rem;
+}
+
+.navDesktop{
+    padding: 1rem 6rem 0rem 2.5rem;
+    height: 5.25rem;
+    background-color: var(--bg-secondary-color);
+}
+
+.navDesktop h5{
+    margin-top: 0.6rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.navDesktop h5:hover{
+    color:var(--button-secondary-color);
+}
+
+.menuMobile{
+    position: fixed;
+    background-color: var(--bg-primary-color);
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    z-index: 50;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.menuMask{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}

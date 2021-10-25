@@ -1,0 +1,91 @@
+:root {
+  /* background colours */
+  --bg-primary-color:#FFFFFF;
+  --bg-secondary-color: #f8f9fa;
+
+  /* Button colours */
+  --button-primary-color:#1565c0;
+  --button-secondary-color:#1890ff;
+  --button-tertiary-color:#4439a3;
+
+  /* text colours  */
+  --text-primary-color: #000000;
+  --text-secondary-color: #FFFFFF;
+  --text-warning: #E64848;
+
+  /* border */
+  --border-radius: 0.3rem;
+
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 140%;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* defining font sizes for h1-h6 */
+
+h1{
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.75rem;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+h4{
+  font-size: 1.25rem;
+}
+
+h5{
+  font-size: 1rem;
+}
+
+h6{
+  font-size: 0.825rem;
+}
+
+/* desktop font sizes*/
+
+@media screen and ( min-width: 1024px) {
+  h1{
+    font-size: 3rem;
+  }
+  
+  h2{
+    font-size: 2.5rem;
+  }
+  
+  h3{
+    font-size: 2rem;
+  }
+  
+  h4{
+    font-size: 1.5rem;
+  }
+  
+  h5{
+    font-size: 1rem;
+  }
+  
+  h6{
+    font-size: 0.825rem;
+  }
+}
