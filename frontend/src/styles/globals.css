@@ -6,6 +6,7 @@
   /* Button colours */
   --button-primary-color:#1565c0;
   --button-secondary-color:#1890ff;
+  --button-tertiary-color:#4439a3;
 
   /* text colours  */
   --text-primary-color: #000000;
@@ -23,8 +24,7 @@ body {
   padding: 0;
   margin: 0;
   line-height: 140%;
-  font-family:Helvetica Neue, Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
 }
 
 a {
@@ -39,11 +39,11 @@ a {
 /* defining font sizes for h1-h6 */
 
 h1{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 h2{
-  font-size: 2rem;
+  font-size: 1.75rem;
 }
 
 h3{
@@ -62,9 +62,11 @@ h6{
   font-size: 0.825rem;
 }
 
+/* desktop font sizes*/
+
 @media screen and ( min-width: 1024px) {
   h1{
-    font-size: 3.25rem;
+    font-size: 3rem;
   }
   
   h2{

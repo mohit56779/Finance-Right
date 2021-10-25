@@ -1,18 +1,23 @@
-import Image from 'next/image';
-import Button from '../Button';
-import styles from './Navbar.module.css';
 import { useState } from 'react';
-
-import {breakpoints} from '../../styles/breakpoints';
-
+import Image from 'next/image';
 import {useTransition, animated} from 'react-spring'
 
+// import logo image
+import logo from '../../../public/icons/logo.png';
+
+// import breakpoints and device size hook
+import {breakpoints} from '../../styles/breakpoints';
 import useDeviceSize from '../../hooks/useDeviceSize';
+
+import Button from '../Button';
+
+import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const deviceSize = useDeviceSize();
   const isMobile = deviceSize.width <= breakpoints.medium;
 
+  // state to store if mobile menu is open or closed
   const [mobileMenu, setMobileMenu] = useState(false);
 
   // for mobile menu nav animation
@@ -30,19 +35,21 @@ export default function Navbar() {
 		leave: { opacity: 0 },
   })
 
+  // only renders in mobile
   if(isMobile){
     return(
       <main className={styles.navMobile}>
         <div className="row">
-
+          {/* logo */}
           <div className="col-10">
-            <Image src="/icons/logo.png" alt="Logo" height={90} width={100} priority={true} quality={100} />
+            <Image src={logo} alt="Logo" placeholder='blur' height={90} width={100} priority={true} quality={100} />
           </div>
-        
-          <div className="col-2">
 
+          {/* right menu */}
+          <div className="col-2">
             <i className="fal fa-bars fa-2x" onClick={() => setMobileMenu(!mobileMenu)} style={{paddingTop:'0.5rem'}}></i>
 
+            {/* mobile menu and left mask */}
             {maskTransitions.map(({ item, key, props }) =>
               item &&
               <animated.div
@@ -76,18 +83,21 @@ export default function Navbar() {
     )
   }
 
+  // only renders in desktop
   return (
     <main className={styles.navDesktop}>
         <div className="row">
+
+          {/* logo */}
           <div className="col-4">
-            <Image src="/icons/logo.png" alt="Logo" height={100} width={100} priority={true} quality={100} />
+            <Image src={logo} alt="Logo" placeholder='blur' height={100} width={100} priority={true} quality={100} />
           </div>
 
+          {/* nav menu */}
           <div className="col-4 d-inline-flex justify-content-center" style={{paddingTop:'0.6rem'}}>
             <h5 style={{paddingRight:'2rem'}}>About</h5>
             <h5>Contact Us</h5>
           </div>
-
           <div className="col-4 d-inline-flex justify-content-end" style={{paddingTop:'0.6rem'}}>
             <h5 style={{paddingRight:'2rem'}}>Log-in</h5>
             <Button className="auth"> Sign-up </Button>
